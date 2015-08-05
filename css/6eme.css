@@ -152,9 +152,13 @@ header .intro-text .skills {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover {
     color: #DE5B49;
     background-color: white;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #FFF;
+    background-color: rgba(24, 188, 156, 0.9);
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #FFF;
@@ -479,7 +483,12 @@ section.success a.active {
     z-index: 2;
 
 }
-
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 112px
+}
+#logo {
+    margin-top: -4px;
+}
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
@@ -487,6 +496,16 @@ section.success a.active {
     color: #fff;
     background: 0 0;
     transition: all .3s ease-in-out;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    color: #FFF;
+    background-color: #E73A0C;
+    border-color: #EF4209;
+}
+.btn-default {
+    color: #FFF;
+    background-color: #1AAAB3;
+    border-color: #1AAEB7;
 }
 
 .btn-outline:hover,
